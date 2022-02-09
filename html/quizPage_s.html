@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzo - Space Trivia</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="navbar flex_row ">
+                <div class="logo left">Quizzo</div>
+                <div class="right">Welcome <span id="nameDisplay"></span></div>
+            </div>
+        </nav>
+    </header>
+    <div class="quiz_wrapper space">
+        <div class="quiz_container ">
+            <div class="quiz_head">
+                <div id="q_index" class="q_index"></div>
+                <div class="score">Score:<span id="score_display">0</span></div>
+                <div class="timer" id="timer">00:00</div>
+            </div>
+            <div class="quiz_body">
+                <div class="question_cont">
+                    <h2 id="question">Q. Lorem ipsum dolor sit amet consectetur, Lorem, ipsum dolor.?</h2>
+                </div>
+                <ul class="options_group">
+                    <li class="option" data-number="1">option1</li>
+                    <li class="option" data-number="2">option2</li>
+                    <li class="option" data-number="3">option3</li>
+                    <li class="option" data-number="4">option4</li>
+                </ul>
+                <div class="btn_container">
+                    <!-- <button class="btn btn_next">Previous</button> -->
+                    <button id="next" class="btn btn_next" onclick="Change();">Next</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../Js/quiz.js" defer></script>
+    <script src="../Js/timer.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Lobster&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #2f3539;
+}
+/* navbar */
+.header {
+  background: #232931;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.2rem;
+  max-width: 1400px;
+  width: 95%;
+  margin: auto;
+  color: #e8e8e8;
+}
+.navbar > * {
+  padding: 0rem 0.8rem;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+  color: #eeeeee;
+  font-size: 2rem;
+}
+
+.quiz_wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz_container {
+  max-width: 700px;
+  width: 90%;
+  min-height: 500px;
+  display: grid;
+  grid-template-rows: 3rem auto;
+  overflow: hidden;
+  border-radius: 5px;
+  /* border: 1px solid #f54b64; */
+}
+
+.quiz_head {
+  background: #3a4146;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1.9px 2.1px -5px rgba(0, 0, 0, 0.15),
+    0px 4.6px 5.1px -5px rgba(0, 0, 0, 0.095),
+    0px 8.7px 9.7px -5px rgba(0, 0, 0, 0.082),
+    0px 15.1px 17.2px -5px rgba(0, 0, 0, 0.077),
+    0px 26.3px 31.1px -5px rgba(0, 0, 0, 0.071),
+    0px 70px 71px -5px rgba(0, 0, 0, 0.06);
+
+  z-index: 1;
+  overflow: hidden;
+}
+.quiz_body {
+  background: #3f474d;
+  padding: 1.5rem;
+}
+
+.user_greet {
+  /* background: coral; */
+  padding: 1rem;
+  margin-left: 0.5rem;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+}
+
+.timer {
+  padding: 1rem;
+  min-width: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right top,
+    #f54b64,
+    #f75b61,
+    #f76960,
+    #f77660,
+    #f78361
+  );
+  color: whitesmoke;
+}
+
+.question_cont {
+  margin-bottom: 1.6rem;
+  font-size: 1rem;
+}
+
+.options_group {
+  list-style-type: none;
+  /* border: 1px dashed cornflowerblue; */
+  display: inline-block;
+}
+
+.option {
+  width: 20rem;
+  padding: 1rem 2rem;
+  background: #4a535a;
+  color: #c2c4c4;
+  margin-bottom: 1rem;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  box-shadow: 0px 0.8px 2.1px -5px rgba(0, 0, 0, 0.15),
+    0px 2px 5.1px -5px rgba(0, 0, 0, 0.095),
+    0px 3.7px 9.7px -5px rgba(0, 0, 0, 0.082),
+    0px 6.5px 17.2px -5px rgba(0, 0, 0, 0.077),
+    0px 11.3px 31.1px -5px rgba(0, 0, 0, 0.071),
+    0px 30px 71px -5px rgba(0, 0, 0, 0.06);
+}
+.option:hover {
+  cursor: pointer;
+  border: 2px solid #f76960;
+  color: #f76960;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  width: 150px;
+  border-radius: 100px;
+  outline: 0;
+  background-image: linear-gradient(
+    to right top,
+    #f54b64,
+    #f75b61,
+    #f76960,
+    #f77660,
+    #f78361
+  );
+  border: #f54b64;
+  color: whitesmoke;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: white;
+  color: #f76960;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.selected {
+  background-image: linear-gradient(
+    to right top,
+    #f54b64,
+    #f75b61,
+    #f76960,
+    #f77660,
+    #f78361
+  );
+  color: #f5f7f7 !important;
+}
+
+.q_index {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 800;
+  color: #f78361;
+}
+
+.score {
+  font-weight: 800;
+  color: #f77660;
+}
+
+.question_cont {
+  color: #f5f7f7 !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .quiz_container {
+    width: 320px;
+  }
+  .quiz_head {
+  }
+
+  .option {
+    width: 16rem;
+  }
+  .question_cont {
+    font-size: 1rem;
+  }
+}

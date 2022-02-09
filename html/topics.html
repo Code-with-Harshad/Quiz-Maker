@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics</title>
+    <link rel="stylesheet" href="../css/topic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- <script src="/Js/test.js" defer></script> -->
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="navbar flex_row ">
+                <div class="logo left">Quizzo</div>
+                <div class="right">Welcome <span id="nameDisplay"></span></div>
+            </div>
+        </nav>
+    </header>
+    <div class="t_wrapper flex_row">
+        <div class="container">
+            <div class="card_wrap">
+                <div class="card one">
+                    <div class="card_content card_front">
+                        <div class="card_head">
+                            <img src="../images/space1.png" alt="Dog" />
+                        </div>
+                        <div class="card_body">
+                            <h3>Space</h3>
+                        </div>
+                    </div>
+                    <div class="card_content card_back">
+                        <div class="card_head">
+                            <h3>Space </h3>
+                        </div>
+                        <div class="card_body">
+                            <p>This quiz is based on given Trivia which consists of 10 multiple-choice questions. Click
+                                play to Beat friends by getting High scores
+                            </p>
+                            <button class="btn card_btn" id="spaceBtn" onclick="space()">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_wrap">
+                <div class="card two">
+                    <div class="card_content card_front">
+                        <div class="card_head">
+                            <img src="../images/Vedic Maths1.png" alt="Dog" />
+                        </div>
+                        <div class="card_body">
+                            <h3>Vedic Maths</h3>
+                        </div>
+                    </div>
+                    <div class="card_content card_back">
+                        <div class="card_head">
+                            <h3>Vedic Maths</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>This quiz is based on given Trivia which consists of 10 multiple-choice questions. Click
+                                play to challenge yousrself
+                            </p>
+                            <button class="btn card_btn" onclick="vedic();">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_wrap">
+                <div class="card three">
+                    <div class="card_content card_front">
+                        <div class="card_head">
+                            <img src="../images/History.png" alt="Dog" />
+                        </div>
+                        <div class="card_body">
+                            <h3>History Trivia</h3>
+                        </div>
+                    </div>
+                    <div class="card_content card_back">
+                        <div class="card_head">
+                            <h3>History</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>This quiz is based on given Trivia which consists of 10 multiple-choice questions. Click
+                                play to Beat friends by getting High scores
+                            </p>
+                            <button class="btn card_btn" onclick="hist();">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_wrap">
+                <div class="card four">
+                    <div class="card_content card_front">
+                        <div class="card_head">
+                            <img src="../images/gs.png" alt=" Dog" />
+                        </div>
+                        <div class="card_body">
+                            <h3>General Science </h3>
+                        </div>
+                    </div>
+                    <div class="card_content card_back">
+                        <div class="card_head">
+                            <h3>General Science</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>This quiz is based on given Trivia which consists of 10 multiple-choice questions. Click
+                                play to Beat friends by getting High scores
+                            </p>
+                            <button class="btn card_btn" onclick="gs();">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_wrap">
+                <div class="card five">
+                    <div class="card_content card_front">
+                        <div class="card_head">
+                            <img src="../images/Current Affairs.png" alt="Dog" />
+                        </div>
+                        <div class="card_body">
+                            <h3>Current Affairs </h3>
+                        </div>
+                    </div>
+                    <div class="card_content card_back">
+                        <div class="card_head">
+                            <h3>Current Affairs</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>This quiz is based on given Trivia which consists of 10 multiple-choice questions. Click
+                                play to Beat friends by getting High scores
+                            </p>
+                            <button class="btn card_btn" onclick="curra();">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_wrap">
+                <div class="card six">
+                    <div class="card_content card_front">
+                        <div class="card_head">
+                            <img src="../images/nature.png" alt="Dog" />
+                        </div>
+                        <div class="card_body">
+                            <h3>Environmental Science</h3>
+                        </div>
+                    </div>
+                    <div class="card_content card_back">
+                        <div class="card_head">
+                            <h3>Env. Science</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>This quiz is based on given Trivia which consists of 10 multiple-choice questions. Click
+                                play to Beat friends by getting High scores
+                            </p>
+                            <button class="btn card_btn" onclick="nature();">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_wrap">
+                <div class="card seven">
+                    <div class="card_content card_front">
+                        <div class="card_head">
+                            <img src="../images/Knowledge.png" alt="Dog" />
+                        </div>
+                        <div class="card_body">
+                            <h3>Pyschology</h3>
+                        </div>
+                    </div>
+                    <div class="card_content card_back">
+                        <div class="card_head">
+                            <h3>Pyschology</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>This quiz is based on given Trivia which consists of 10 multiple-choice questions. Click
+                                play to Beat friends by getting High scores
+                            </p>
+                            <button class="btn card_btn" onclick="gk();">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_wrap">
+                <div class="card eight">
+                    <div class="card_content card_front">
+                        <div class="card_head">
+                            <img src="../images/fitness.png" alt="Dog" />
+                        </div>
+                        <div class="card_body">
+                            <h3>Fitness Trivia</h3>
+                        </div>
+                    </div>
+                    <div class="card_content card_back">
+                        <div class="card_head">
+                            <h3>Fitness</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>This quiz is based on given Trivia which consists of 10 multiple-choice questions. Click
+                                play to Beat friends by getting High scores
+                            </p>
+                            <button class="btn card_btn" onclick="fitness();">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Js/app.js" defer></script>
+</body>
+
+</html>

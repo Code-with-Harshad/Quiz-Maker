@@ -1,0 +1,119 @@
+:root {
+  background-color: #2f3539;
+  font: 62.5%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Lobster&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.r_wrapper {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px dashed crimson; */
+}
+
+.header {
+  background: #1e1e1e;
+}
+.navbar {
+  justify-content: space-between;
+  min-height: 3.2rem;
+  max-width: 1400px;
+  width: 95%;
+  margin: auto;
+  color: #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar > * {
+  padding: 0rem 0.8rem;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 370px;
+  width: 98%;
+  /* border: 1px dashed #f78361; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f7f7;
+  padding: 0.5rem;
+}
+
+.img_container {
+  width: 350px;
+}
+.img_celeb {
+  width: 100%;
+}
+.body_wrapper {
+  text-align: center;
+}
+
+.body_wrapper > * {
+  padding: 0.2rem;
+}
+
+.btn_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.7rem 2rem;
+  margin-bottom: 0.5rem;
+  border: 0;
+  background-image: linear-gradient(
+    to right top,
+    #f54b64,
+    #f75b61,
+    #f76960,
+    #f77660,
+    #f78361
+  );
+  /* border: 1px solid #f78361; */
+  border-radius: 5px;
+  color: #f5f7f7;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.btn::after {
+  position: absolute;
+  width: 0%;
+  content: "";
+  height: 150%;
+  left: -10%;
+  bottom: -10%;
+  background: #f5f7f7;
+  transition: 0.3s;
+  transform: skewX(15deg);
+  z-index: -1;
+}
+.btn:hover::after {
+  width: 120%;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #f77660;
+  transform: translateY(0.1rem);
+  /* border: 1px solid transparent; */
+}

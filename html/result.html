@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzo</title>
+    <link rel="stylesheet" href="../css/result.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="navbar ">
+                <div class="logo left">Quizzo</div>
+                <div class="right">Welcome <span id="nameDisplay"></span></div>
+            </div>
+        </nav>
+    </header>
+    <div class="r_wrapper">
+
+        <div class="container">
+            <div class="img_container">
+                <img src="../images/celebration.png" class="img_celeb" alt="">
+            </div>
+            <div class="body_wrapper">
+                <h3>Congratulations <span id="player">Player</span></h3>
+                <h4>You Have Scored a total of <span id="score">Points</span> Out of 100</h4>
+                <h4>Total Time Taken :<span id="displayTime"></span></h4>
+            </div>
+            <div class="btn_wrapper">
+                <button class="btn" onclick="saveScore();" id="save">Save Score</button>
+                <button class="btn" onclick="playAgain();" id="playAgain">Play Again</button>
+                <button class="btn" onclick="goHome();" id="Home">Go Home</button>
+            </div>
+        </div>
+    </div>
+    <script src="../Js/result.js" defer></script>
+</body>
+
+</html>
